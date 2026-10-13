@@ -1,12 +1,15 @@
 Name:		python-matrix-common
 Version:	1.3.0
-Release:	3
+Release:	4
 Source0:	https://files.pythonhosted.org/packages/source/m/matrix-common/matrix_common-%{version}.tar.gz
 Summary:	Common utilities for Synapse, Sydent and Sygnal
 URL:		https://pypi.org/project/matrix-common/
-License:	GPL
+License:	Apache-2.0
 Group:		Development/Python
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildArch:	noarch
 
 %description
